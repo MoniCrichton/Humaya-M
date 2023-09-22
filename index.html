@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>HUMAYA</title>
+</head>
+<body>
+    <header>
+        <h1>HUMAYA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="productos">
+        <h2>Productos</h2>
+
+        <div class="grid-container">
+            <div class="item">
+                <img src="./imagenes/DLTradicional.png" alt="Dulce de Leche Tradicional">
+                <p>Texto relacionado con el Producto 1</p>
+            </div>
+            <div class="item">
+                <img src="./imagenes/Dulce Choconut.png" alt="Dulce Coconut">
+                <p>Texto relacionado con el Producto 2</p>
+            </div>
+            <div class="item">
+                <img src="./imagenes/DL Sin Azucar.png" alt="Dulce de Leche Sin Azucar">
+                <p>Texto relacionado con el Producto 3</p>
+            </div>
+            <div class="item">
+                <img src="./imagenes/Alfajor Maicena.png" alt="Alfajor de Maicena">
+                <p>Texto relacionado con el Producto 4</p>
+            </div>
+            <!-- Repite esto para más productos -->
+        </div>
+    </section>
+
+    <section id="recetas">
+        <h2>Recetas</h2>
+        <div id="recetas-container">
+            <!-- Aquí se cargarán las recetas dinámicamente -->
+            <div class="receta-item">
+                <h3>Nombre de la receta 1</h3>
+                <p>Descripción de la receta 1</p>
+            </div>
+            <div class="receta-item">
+                <h3>Nombre de la receta 2</h3>
+                <p>Descripción de la receta 2</p>
+            </div>
+            <!-- Repite esto para más recetas -->
+        </div>
+    </section>
+    
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte!</p>
+
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2023 Tu Nombre</p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
